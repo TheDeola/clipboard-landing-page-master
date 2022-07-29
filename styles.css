@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+    --Font-size: 18px;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: var(--Dark-Grayish-Blue);
+}
+.container {
+    width: 375px;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+    background-image: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+}
+h1, h2, h3, h4, p {
+    padding: 0 30px;
+}
+.logo-top {
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+.logo-bottom {
+    width: 50px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.banner-image {
+    width: 340px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+p {
+    font-size: 16px;
+    color: var(--Grayish-Blue);
+    line-height: 25px;
+}
+.q-i-c p {
+    margin-bottom: 50px;
+}
+.access-clip {
+    margin-top: 130px;
+    margin-bottom: 70px;
+}
+.font-inc {
+    font-size: 30px;
+}
+.super-img {
+    margin-top: 50px;
+}
+.buttons {
+    margin-top: 30px;
+    margin-bottom: 120px;
+}
+.partner-images {
+    margin: 100px auto;
+}
+.partner-images img[src] {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.clip {
+    font-size: 24px;
+    /* padding: 0 20px; */
+}
+.btn-ios {
+    width: 300px;
+    padding: 13px;
+    background-color: var(--Strong-Cyan);
+    border-radius: 30px;
+    border: 1px solid var(--Strong-Cyan);
+    margin: 20px auto;
+    color: white;
+    font-weight: bolder;
+    box-shadow: 2px 3px rgb(142, 203, 203);
+}
+.btn-ios:hover {
+    cursor: pointer;
+    background-color: rgb(164, 206, 206);
+    border-color: rgb(164, 206, 206);
+}
+.btn-mac {
+    width: 300px;
+    padding: 13px;
+    background-color: var(--Light-Blue);
+    border-radius: 30px;
+    border: 1px solid var(--Light-Blue);
+    color: white;
+    font-weight: bolder;
+    box-shadow: 2px 3px rgb(124, 145, 189);
+}
+.btn-mac:hover {
+    cursor: pointer;
+    background-color: rgb(158, 184, 235);
+    border-color: rgb(158, 184, 235);
+}
+#footer {
+    margin-top: 150px;
+    background-color: rgba(234, 239, 244, 0.4);
+    background-position: cover;
+}
+#footer a {
+    text-decoration: none;
+    color: var(--Grayish-Blue);
+}
+#footer a:hover {
+    cursor: pointer;
+    color: var(--Strong-Cyan);
+}
+.socials {
+    display: flex;
+    justify-content: center;
+}
+.socials img {
+    margin: 30px;
+}
+#footer .socials img:hover {
+    background-color: var(--Strong-Cyan);
+}
+.attribution { 
+    font-size: 10px; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Desktop Styling */
+
+@media screen and (min-width: 600px) {
+    .container {
+        width: 100%;
+        min-width: 1440px;
+        background-image: url(./images/bg-header-desktop.png);
+    }
+    h1, h2, h3, h4, p {
+        text-align: center;
+        padding: 0 30%;
+    }
+    .banner-image {
+        width: 600px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .btn-ios {
+        width: 200px;
+        margin-right: 20px;
+    }
+    .btn-mac {
+        width: 200px;
+    }
+    .split-flex {
+        display: flex;
+        flex-direction: row;
+    }
+    .q-i-c {
+        margin-top: 40px;
+    }
+    .q-i-c h3, .q-i-c p {
+        text-align: left;
+        padding-right: 15%;
+    }
+    .sub-super-class {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    .super-class {
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+    }
+    .sub-super-class p {
+        text-align: center;
+        padding: 0 20%;
+    }
+    .partner-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1px;
+    }
+    .partner-images img {
+        width: 8%;
+    }
+    #footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #footer p {
+        padding: 0;
+        text-align: left;
+        color: var(--Dark-Grayish-Blue);
+    }
+    #footer .logo-bottom {
+       margin-bottom: 50px;
+    }
+    .socials img {
+        margin: 10px;
+    }
+}
